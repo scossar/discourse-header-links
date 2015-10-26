@@ -7,20 +7,20 @@ export default {
   initialize() {
     HeaderController.reopen({
       headerLinks: function () {
-        return this.siteSettings.header_links_links.split('|');
+        const links =  this.siteSettings.header_links_links.split('|'),
+          scriptReg = /<script/;
+        let safeLinks = [];
+        links.forEach(function(link) {
+          if (!scriptReg.test(link)) {
+            safeLinks.push(link);
+          }
+        });
+        return safeLinks;
       }.property(),
+
       hideLinks: function () {
         return this.get('showExtraInfo');
       }.property('showExtraInfo')
     });
-
-    //HeaderView.reopen({
-    //  showExtra
-    //  toggleOutlet: function () {
-    //    if (this.get('controller.showExtraInfo')) {
-    //      $('.header-after-home-logo').addClass('showing-extra-info');
-    //    }
-    //  }.observes('controller.showExtraInfo'),
-    //});
   }
 }
