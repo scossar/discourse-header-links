@@ -1,0 +1,22 @@
+.header-links {
+  width: 50%;
+  margin: 0;
+  float: left;
+}
+
+.extra-header-links {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.header-link {
+  display: inline-block;
+}
+
+.extra-header-links.hide-links {
+  display: none;
+}
+

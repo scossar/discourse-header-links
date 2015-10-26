@@ -1,0 +1,8 @@
+plugins:
+  header_links_enabled:
+    default: true
+    client: true
+  header_links_links:
+    type: list
+    default: ''
+    client: true
