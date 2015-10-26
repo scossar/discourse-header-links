@@ -14,8 +14,15 @@ forum.
 ### Use
 
 To add links to the header, visit the plugin's settings page. Links can be added
-to the 'header links links' input box. It is easiest to format your links in a
-text editor and then copy and paste them into the input.
+to the 'add header links' input box.
+
+![alt tag](https://cloud.githubusercontent.com/assets/2975917/10745802/0e602c0a-7c02-11e5-95b4-0026a1d66d38.png)
+
+![alt tag](https://cloud.githubusercontent.com/assets/2975917/10745812/1c94e090-7c02-11e5-8650-95184247ce74.png)
+
+![alt tag](https://cloud.githubusercontent.com/assets/2975917/10745814/2042199c-7c02-11e5-8fd0-f4b4d266cc04.png)
+
+It is easiest to format your links in a text editor and then copy and paste them into the input.
 
 ### Style the links
 

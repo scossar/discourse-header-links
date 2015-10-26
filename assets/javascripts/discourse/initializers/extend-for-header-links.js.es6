@@ -7,7 +7,7 @@ export default {
   initialize() {
     HeaderController.reopen({
       headerLinks: function () {
-        const links =  this.siteSettings.header_links_links.split('|'),
+        const links =  this.siteSettings.add_header_links.split('|'),
           scriptReg = /<script/;
         let safeLinks = [];
         links.forEach(function(link) {
