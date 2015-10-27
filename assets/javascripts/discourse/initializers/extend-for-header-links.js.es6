@@ -1,5 +1,4 @@
 import HeaderController from 'discourse/controllers/header';
-import HeaderView from 'discourse/views/header';
 
 export default {
   name: 'extend-for-header-links',
