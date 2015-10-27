@@ -2,7 +2,7 @@ plugins:
   header_links_enabled:
     default: true
     client: true
-  add_header_links:
+  header_links_add_links:
     type: list
     default: ''
     client: true

@@ -1,4 +1,4 @@
 en:
   site_settings:
     header_links_enabled: "Enable header links?"
-    add_header_links: "Set the links you would like to appear in the header."
+    header_links_add_links: "Set the links you would like to appear in the header."

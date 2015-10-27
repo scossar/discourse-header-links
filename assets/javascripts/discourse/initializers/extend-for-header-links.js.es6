@@ -6,7 +6,7 @@ export default {
   initialize() {
     HeaderController.reopen({
       headerLinks: function () {
-        const links =  this.siteSettings.add_header_links.split('|'),
+        const links =  this.siteSettings.header_links_add_links.split('|'),
           scriptReg = /<script/;
         let safeLinks = [];
         links.forEach(function(link) {
@@ -19,7 +19,11 @@ export default {
 
       hideLinks: function () {
         return this.get('showExtraInfo');
-      }.property('showExtraInfo')
+      }.property('showExtraInfo'),
+
+      headerLinksEnabled: function () {
+        return this.siteSettings.header_links_enabled;
+      }.property()
     });
   }
 }
